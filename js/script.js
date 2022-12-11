@@ -44,10 +44,8 @@ function nextImage() {
     let countImgs = document.querySelectorAll('.images img').length
     if (activeImageId > countImgs) {
         activeImageId = 1;
-        activeImage.src = document.getElementById(`img-${activeImageId}`).src;
-    } else {
-        activeImage.src = document.getElementById(`img-${activeImageId}`).src;
-    } 
+    }
+    activeImage.src = document.getElementById(`img-${activeImageId}`).src; 
 }
 
 // Смена текущего изображения налево
@@ -56,10 +54,7 @@ function prevImage() {
     let countImgs = document.querySelectorAll('.images img').length
     if (activeImageId < 1) {
         activeImageId = countImgs;
-        activeImage.src = document.getElementById(`img-${activeImageId}`).src;
-    } else {
-        activeImage.src = document.getElementById(`img-${activeImageId}`).src;
-    } 
+    }
     activeImage.src = document.getElementById(`img-${activeImageId}`).src;
 }
 
